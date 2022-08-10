@@ -2,8 +2,8 @@
 
 ## クイックスタート
 ```bash
-git clone https://github.com/sojiro-otsubo/parts-classify-inference
-cd parts-classify-inference
+git clone https://github.com/sojiro-otsubo/parts-detection-inference
+cd parts-detection-inference
 docker-compose up
 
 👉 http://localhost:8080
@@ -19,11 +19,11 @@ docker-compose up
 ## 動作チェック
 ### イメージのビルド
 ```bash
-docker build -it parts-classify -f docker/Dockerfile .
+docker build -it parts-detection -f docker/Dockerfile .
 ```
 ### コンテナ作成
 ```bash
-docker run -p 8080:5000 -it parts-classify
+docker run -p 8080:5000 -it parts-detection
 ```
 コンテナに入る
 ### テストの実行
@@ -40,4 +40,4 @@ curl http://localhost:8080/status
 ```
 
 ## 学習コード
-https://github.com/sojiro-otsubo/parts-classify-learn
+https://github.com/sojiro-otsubo/parts-detection-learn
