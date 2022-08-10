@@ -1,4 +1,4 @@
-# Car parts classification (inference api)
+# Car parts detection (inference api)
 
 ## クイックスタート
 ```bash
